@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>data_employee Portal</title>
-	<meta name="description" content="data_employee Information">
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" >
-  	<link rel="stylesheet" href="css/style.css">
-	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-  <?php
-                include("include/globalheader.php");
-           ?>
-  </header>
-	<section class="head">
-		<div>
-			<h1>Employee Portal</h1>
-		</div>
-	</section>
-  <main class="container">
-	   <section class="form-row row justify-content-center">
-		     <form method="post" class="form-horizontal col-md-6 col-md-offset-3" action="save-admin.php">
-					 <h2>Create User</h2>
-					 <div class="form-group">
-						 <label for="input1" class="col-sm-2 control-label">First Name</label>
-						 <div class="col-sm-10">
-							 <input type="text" name="fname" class="form-control" id="input1">
-						 </div>
-					 </div>
-					 <div class="form-group">
-						 <label for="input2" class="col-sm-2 control-label">Last Name</label>
-						 <div class="col-sm-10">
-							 <input type="text" name="lname" class="form-control" id="input2">
-						 </div>
-					 </div>
-					 <div class="form-group">
-						 <label for="input3" class="col-sm-2 control-label">Email</label>
-						 <div class="col-sm-10">
-							 <input type="email" name="email" class="form-control" id="input3">
-						 </div>
-					 </div>
-                     
-					 <div class="form-group">
-						 <label for="input4" class="col-sm-2 control-label">Age</label>
-						 <div class="col-sm-10">
-							 <select name="age" class="form-control">
-								 <option>Select Your Age</option>
-								 <option value="20">20</option>
-								 <option value="21">21</option>
-								 <option value="22">22</option>
-								 <option value="23">23</option>
-								 <option value="24">24</option>
-								 <option value="25">25</option>
-							 </select>
-						 </div>
-					 </div>
-					 <div class="form-group">
-						<label for="input7" class="col-sm-2 control-label">Employee ID</label>
-						<div class="col-sm-10">
-							<input type="number" name="Employee_ID" class="form-control" id="input7">
-						</div>
-</div>
-                     <div class="form-group">
-						 <label for="input5" class="col-sm-2 control-label">Hours worked</label>
-						 <div class="col-sm-10">
-							 <input type="number" name="hoursworked" class="form-control" id="input5">
-						 </div>
-					 </div>
-                     <div class="form-group">
-						 <label for="input6" class="col-sm-2 control-label">Department</label>
-						 <div class="col-sm-10">
-							 <input type="text" name="department" class="form-control" id="input6">
-						 </div>
-					 </div>
-					<div class="form-group">
-						<p><input class="form-control" name="username" type="text" placeholder="Username" required></p>
-						<p><input class="form-control" name="password" type="password" placeholder="Password" required></p>
-						<input class="btn btn-primary col-md-2 col-md-offset-10" type="submit" value="Register">
-					</div>
-</form>
-					
-					<form method="post" class="form-horizontal col-md-6 col-md-offset-3" action="validate.php">
-					<div class="form-group">
-						<fieldset>
-							<legend>Already have a account</legend>
-						<p><input class="form-control" name="username" type="text" placeholder="Username" required></p>
-						<p><input class="form-control" name="password" type="password" placeholder="Password" required></p>
-						<input class="btn btn-primary col-md-2 col-md-offset-10" type="submit" value="Login">
-						</fieldset>
-</form>
-					</div>
 
-</section>
-      
-     </main>
-	 <footer>
-  <?php
-                include("include/globalfooter.php");
-           ?>
-  </footer>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="polaroid2.png" alt="website Logo">
+            <div class="searchBar">
+                <input type="search" placeholder="Search for music">
+            </div>
+            <div class="Acontainer">
+                <a href="home" class="active">Home</a>
+                <a href="login.php">Login</a>
+                <a href="signup.php">Register</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section1">
+        <div class="polaroid1 pop-element">
+            <img src="polaroid1.png" alt="">
+        </div>
+        <div class="section1_1">
+            <h1 class="pop-element">Polaroid</h1><br>
+            <h2>Capture your <br> Moments</h2>
+        </div>
+    </section>
+
+    <section class="section2">
+        <blockquote>
+            " The Polaroid camera is a timeless icon, blending nostalgia with modern simplicity. <br>
+            Each click freezes a moment, creating tangible memories that transcend the digital realm. <br>
+             With its distinctive shake-and-develop ritual, it offers a refreshing return to the tactile and <br> immediate in a world saturated with digital imagery. The Polaroid isn't just a camera; <br>
+             it's a conduit for creating, sharing, and treasuring authentic moments."
+        </blockquote>
+    </section>
+    <section class="section3">
+        <div class="polaroid5 pop-element">
+            <img src="polaroid5.png" alt="">
+        </div>
+        <div class="section3_1">
+            <h1 class="pop-element">JOIN US!</h1><br>
+            <h2 id="slideInHeading">NOW!</h2>
+            <ul class="pop-element">
+                <li>Instant Gratification</li>
+                <li>Tactile and Tangible Memories</li>
+                <li>Creative Expression and Spontaneity</li>
+                <li>Social Interaction and Sharing</li>
+                <li>Iconic Aesthetic and Timeless Appeal</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="tab">
+            <h1 class="pop-element">Shop</h1>
+            <div class="subtabs">
+                <a href="Home.html">Home</a>
+                <a href="Product.html">Our Product</a>
+            </div>
+            <h1 class="pop-element">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company</h1>
+            <div class="subtabs">
+                <a href="about.html">About</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+            <h1 class="pop-element">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Us</h1>
+            <div class="subtabs">
+                <p>contact@Polaroid.corp</p>
+                <p>+1-(123)-456-4440</p>
+                <p>111, tupac shakur road, Toronto</p>
+            </div>
+            <h1 class="pop-element">Follow Us</h1>
+            <div class="subtabs">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+        <div class="footerdiv">
+            <div class="tab-2">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>© 2023 by Polaroid Camera Corp.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        // JavaScript to control the animation
+        document.addEventListener("DOMContentLoaded", function () {
+          var slideInHeading = document.getElementById("slideInHeading");
+    
+          function checkScroll() {
+            var triggerBottom = window.innerHeight * 0.8; // Adjust as needed
+            var headingTop = slideInHeading.getBoundingClientRect().top;
+    
+            if (headingTop < triggerBottom) {
+              slideInHeading.style.opacity = 1;
+              slideInHeading.style.transform = "translateX(0)";
+              window.removeEventListener("scroll", checkScroll);
+            }
+          }
+    
+          window.addEventListener("scroll", checkScroll);
+          checkScroll(); // Check on initial load
+        });
+      </script>
+</body>
+
 </html>
